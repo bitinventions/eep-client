@@ -135,7 +135,7 @@ public class HEP3 {
 				chunk = new Chunk();
 				chunk.vendor = 0x0000;
 				chunk.type = 0x000b;
-				chunk.payload = new byte[] { (byte)((protocolType >>> 8) & 0xff), (byte)(protocolType & 0xff)};
+				chunk.payload = new byte[] { (byte)(protocolType & 0xff)};
 				chunks.add(chunk);
 				
 				// clientId
